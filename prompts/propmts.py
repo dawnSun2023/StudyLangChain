@@ -4,11 +4,11 @@ from langchain.llms import OpenAI
 import os
 
 
-#示例一：
+#示例一：普通提示（Normal Prompting）
 template = """
 你喜欢{city}这座城市嘛?
 """
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "you openai api key"
 prompt = PromptTemplate.from_template(template)
 str = prompt.format(city="武汉")
 print(str)

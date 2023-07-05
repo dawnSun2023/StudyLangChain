@@ -19,7 +19,7 @@ from langchain.embeddings import OpenAIEmbeddings
 
 """一、openai的模型"""
 #设置openai的api key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "you open ai api key"
 llm = OpenAI(model_name="text-davinci-003", n=2, temperature=0.3)
 #使用请放开调用
 # print(llm("给我讲一个笑话"))
