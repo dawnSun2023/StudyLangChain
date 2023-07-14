@@ -90,7 +90,7 @@ YouTube transcripts	加载YouTube视频
 """
 from langchain.document_loaders import TextLoader
 
-loader = TextLoader("../test.txt", encoding='utf-8')
+loader = TextLoader("../file/test.txt", encoding='utf-8')
 documents = loader.load()
 print(loader)
 print(documents)
@@ -122,7 +122,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 
-loader = TextLoader('../test.txt',encoding='utf-8')
+loader = TextLoader('../file/test.txt', encoding='utf-8')
 documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 texts = text_splitter.split_documents(documents)

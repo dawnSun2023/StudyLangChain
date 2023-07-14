@@ -28,7 +28,7 @@ os.environ['OPENAI_API_KEY'] = 'sk-hj0aIeiCVJeMpne6lX1pT3BlbkFJHF8wLce9DGHU203bn
 os.environ['ACTIVELOOP_TOKEN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY4ODg3ODc1NywiZXhwIjoxNjg4OTY1MTM0fQ.eyJpZCI6ImNmNTY4Njc3Njg3In0.qX7EnkX6yr4Q2TI5CMe6T17lhHiWtlEPX_rEcgK147EyqYo7wMImhlNRQooNvlYjrMmT1cwHyQnGvhXi73gkJw'
 
 sources = []
-loader = TextLoader('llm_base.py', encoding='utf8')
+loader = TextLoader('../llm_base.py', encoding='utf8')
 #拆分文档并将其添加到源列表中
 sources.extend(loader.load_and_split())
 
